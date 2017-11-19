@@ -1,0 +1,95 @@
+body
+	line-height: 1.4
+	font-family: 'Vollkorn', serif
+	color: #fff 
+	overflow: hidden
+	height: 100vh
+	// background: #000  
+=fancy
+	font-family: 'Amatic SC', cursive
+
+
+.header
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	padding: 20px    
+	+fancy
+	z-index: 1500 
+img
+	max-width: 100%
+	display: block 
+.pagination
+	position: fixed
+	bottom: 50px
+	left: 50px
+	z-index: 1500
+	li
+		margin-bottom: 10px 
+	a
+		width: 10px 
+		height: 10px 
+		display: block
+		background: #fff
+		border-radius: 50%
+		&.is-active
+			background: red 
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10   
+	width: 100%
+	height: 100vh
+	// background: red !important   
+	
+.section
+	height: 100vh
+	width: 100%
+	background: #000
+	padding: 10vw
+	position: absolute
+	top: 0
+	left: 0  
+	opacity: 0
+	&.is-active
+		opacity: 1 
+	&:nth-child(2) 
+		background: #2ecc40   
+	&:nth-child(3)   
+		background: #00d0a0 
+	&:nth-child(4)   
+		background: #7fdcff  
+		
+	
+	h2
+		+fancy
+		font-size: 80px 
+		margin-bottom: 1em 
+		position: relative
+		span
+			position: absolute
+			left: -.7em 
+	p
+		display: inline-block
+		width: 30%
+		font-size: 20px
+		padding-right: 20px   
+		line-height: 1.6 
+		vertical-align: top
+
+#waves
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	z-index: 300 
+	pointer-events: none
+	.waves__01
+		fill: #fec300
+	.waves__02
+		fill: #bccf3c
+	.waves__03
+		// fill: #fff
